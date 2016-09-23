@@ -43,13 +43,17 @@ class D(B, C):
     '''
     Test class
     '''
-    def __del__(self):                             # 销毁后调用
-        print('deleteing the ...')
 
-
+    def __str__(self):
+        return 'Dasdfasdf'
 
 d = D()
 
 d.f1()
 d.f2()
+print(d)
 
+
+#class 是通通type创建的如下 () {}
+MyShinyClass = type('MyShinyClass',(),{'test':123})
+a = MyShinyClass()
